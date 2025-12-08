@@ -1,0 +1,44 @@
+#include <stdio.h>
+
+int main() {
+    int h, t;
+    float c;
+    scanf("%d %f %d", &h, &c, &t);
+    
+     int count = 0;
+
+    if (h > 50) count++;
+    if (c < 0.7) count++;
+    if (t > 5600) count++;
+    
+    int grade;
+
+    if (count == 3) grade = 10;
+    else if (count == 2) {
+        
+        if (h > 50 && c < 0.7) grade = 9;
+        else if (c < 0.7 && t > 5600) grade = 8;
+        else grade = 7;
+    }
+    else if (count == 1) grade = 6;
+    else grade = 5;
+
+    
+    printf("The grade of the steel is: %d\n", grade);
+
+   
+    if (count == 3){
+        printf("All of the conditions met.");
+    }
+    else if (count == 2){
+        printf("Two conditions met.");
+    }
+    else if (count == 1){
+        printf("Only one condition met.");
+    }
+    else {
+        printf("None of the conditions met.");
+    }
+
+    return 0;
+}
