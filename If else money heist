@@ -1,0 +1,51 @@
+#include <stdio.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    int d0, d1, d2, d3, d4, d5, d6, d7, d8, d9;
+    int index1, rot1, index2, rot2, index3, rot3;
+    scanf("%d %d %d %d %d %d %d %d %d %d",&d0, &d1, &d2, &d3, &d4, &d5, &d6, &d7, &d8, &d9);
+    scanf("%d %d", &index1, &rot1);
+    scanf("%d %d", &index2, &rot2);
+    scanf("%d %d", &index3, &rot3);
+    
+     if(index1 == 0) d0 = (d0 + rot1) % 10;
+    else if(index1 == 1) d1 = (d1 + rot1) % 10;
+    else if(index1 == 2) d2 = (d2 + rot1) % 10;
+    else if(index1 == 3) d3 = (d3 + rot1) % 10;
+    else if(index1 == 4) d4 = (d4 + rot1) % 10;
+    else if(index1 == 5) d5 = (d5 + rot1) % 10;
+    else if(index1 == 6) d6 = (d6 + rot1) % 10;
+    else if(index1 == 7) d7 = (d7 + rot1) % 10;
+    else if(index1 == 8) d8 = (d8 + rot1) % 10;
+    else if(index1 == 9) d9 = (d9 + rot1) % 10;
+    
+    if(index2 == 0) d0 = (d0 + rot2) % 10;
+    else if(index2 == 1) d1 = (d1 + rot2) % 10;
+    else if(index2 == 2) d2 = (d2 + rot2) % 10;
+    else if(index2 == 3) d3 = (d3 + rot2) % 10;
+    else if(index2 == 4) d4 = (d4 + rot2) % 10;
+    else if(index2 == 5) d5 = (d5 + rot2) % 10;
+    else if(index2 == 6) d6 = (d6 + rot2) % 10;
+    else if(index2 == 7) d7 = (d7 + rot2) % 10;
+    else if(index2 == 8) d8 = (d8 + rot2) % 10;
+    else if(index2 == 9) d9 = (d9 + rot2) % 10;
+    
+    if(index3 == 0) d0 = (d0 + rot3) % 10;
+    else if(index3 == 1) d1 = (d1 + rot3) % 10;
+    else if(index3 == 2) d2 = (d2 + rot3) % 10;
+    else if(index3 == 3) d3 = (d3 + rot3) % 10;
+    else if(index3 == 4) d4 = (d4 + rot3) % 10;
+    else if(index3 == 5) d5 = (d5 + rot3) % 10;
+    else if(index3 == 6) d6 = (d6 + rot3) % 10;
+    else if(index3 == 7) d7 = (d7 + rot3) % 10;
+    else if(index3 == 8) d8 = (d8 + rot3) % 10;
+    else if(index3 == 9) d9 = (d9 + rot3) % 10;
+    
+    printf("%d %d %d %d %d %d %d %d %d %d",
+           d0, d1, d2, d3, d4, d5, d6, d7, d8, d9);
+
+
+    return 0;
+}
