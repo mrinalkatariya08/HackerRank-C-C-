@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    int h, m;
+    scanf("%d %d", &h, &m);   
+
+    // AM / PM check
+    if (h < 12) {
+        // AM case
+        if (h == 0)
+            printf("12:%02d AM", m);   
+        else
+            printf("%02d:%02d AM", h, m);
+    }
+    else {
+        // PM case
+        if (h == 12)
+            printf("12:%02d PM", m);   
+        else
+            printf("%02d:%02d PM", h - 12, m);
+    }
+    return 0;
+}
